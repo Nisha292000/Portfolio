@@ -64,22 +64,22 @@ const Projects = () => {
                 <Grid container spacing={5} className='mt-5'>
                     {projects.map((project, index) => (
                         <Grid item xs={12} md={6} key={index}>
-                            <div className='image-container'>
-                                <Link href={project.link} target='_blank'>
+                            <Link href={project.link} target='_blank'>
+                                <div className='image-container'>
                                     <img
                                         src={project.imageUrl}
                                         alt='img not found'
                                         className='project-image'
                                     />
-                                </Link>
-                                <div className='overlay'>
-                                    <Typography variant='h5' className='title'>{project.name}</Typography>
-                                    <div className='about'>
-                                        <Typography variant='p'>{project.description}</Typography>
-                                        <Typography variant='p'>Tags: {project.language}</Typography>
+                                    <div className='overlay'>
+                                        <Typography variant='h5' className='title'>{project.name}</Typography>
+                                        <div className='about'>
+                                            <Typography variant='p'>{project.description}</Typography>
+                                            <Typography variant='p'>Tags: {project.language}</Typography>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </Grid>
                     ))}
                 </Grid>

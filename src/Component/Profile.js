@@ -25,7 +25,7 @@ const Profile = () => {
                         </Typography> */}
                         <Typography className='about mt-3'>
                             Hi, my name is <strong>Nisha Tiwari</strong> I'm an allround web developer. I am a senior programmer 
-                            with good knowledge of front-end and backend techniques. love structure and order and I also stand 
+                            with good knowledge of front-end and backend techniques. I love structure and order and I also stand 
                             for quality. I love spending time on fixing little details and optimizing web apps. Also I like 
                             working in a team, you'll learn faster and more. As the saying goes: 'two heads are better than one'.
                         </Typography>
