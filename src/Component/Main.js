@@ -5,7 +5,7 @@ import './Component.css';
 const Main = () => {
   return (
     <>
-      <Box className='main text-light'>
+      <Box className='main'>
         <Typography variant='h2'>Nisha Tiwari</Typography>
         <Typography variant='h4'>I'm a <span className='change_content fw-bold'></span></Typography>
       </Box>

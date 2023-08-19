@@ -14,7 +14,7 @@ const Profile = () => {
                         </Box>
                     </Grid>
                     <Grid xs={12} md={7} className='profileContent mt-1'>
-                        <Typography variant='p' className='heading px-4 py-2 fw-bold'>About Me</Typography>
+                        <Typography variant='p' className='attractive-heading px-4 py-2 fw-bold'>About Me</Typography>
                         {/* <Typography className='about mt-3'>
                             Hi, my name is <strong>Nisha Tiwari</strong> I'm a Creative / Full Stack Developer from the Noida.
                             Over the years I developed a skill set in a range of technologies and frameworks, including

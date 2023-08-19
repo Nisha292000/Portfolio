@@ -53,30 +53,32 @@ const Projects = () => {
     ];
 
     return (
-        <>
-            <Container className='projects mb-5'>
+        <Box className="projects">
+            <Container className='mb-5'>
                 <Box className='text-center'>
                     <Typography variant='h2' className='fw-bold header'>Projects</Typography>
-                    <Typography className='quote'>“You can do anything you set your mind to.”</Typography>
+                    <Typography className='quote'>
+                        “You can do anything you set your mind to.”
+                    </Typography>
                     <Typography className='quote fw-bold'>- Benjamin Franklin</Typography>
                 </Box>
 
-                <Grid container spacing={5} className='mt-5'>
+                <Grid container spacing={4} className='mt-5'>
                     {projects.map((project, index) => (
                         <Grid item xs={12} md={6} key={index}>
-                            <Link href={project.link} target='_blank'>
-                                <div className='image-container'>
-                                    <img
-                                        src={project.imageUrl}
-                                        alt='img not found'
-                                        className='project-image'
-                                    />
-                                    <div className='overlay'>
-                                        <Typography variant='h5' className='title'>{project.name}</Typography>
-                                        <div className='about'>
-                                            <Typography variant='p'>{project.description}</Typography>
-                                            <Typography variant='p'>Tags: {project.language}</Typography>
-                                        </div>
+                            <Link href={project.link} target='_blank' className='project-link'>
+                                <div className='project-card'>
+                                    <div className='project-image'>
+                                        <img
+                                            src={project.imageUrl}
+                                            alt='Project'
+                                            className='project-image-inner'
+                                        />
+                                    </div>
+                                    <div className='project-details'>
+                                        <Typography variant='h5' className='project-title'>{project.name}</Typography>
+                                        <Typography variant='body1' className='project-description'>{project.description}</Typography>
+                                        <Typography variant='body2' className='project-language'>Tags: {project.language}</Typography>
                                     </div>
                                 </div>
                             </Link>
@@ -84,7 +86,7 @@ const Projects = () => {
                     ))}
                 </Grid>
             </Container>
-        </>
+        </Box>
     );
 }
 
