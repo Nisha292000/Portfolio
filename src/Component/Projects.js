@@ -56,7 +56,7 @@ const Projects = () => {
         <Box className="projects">
             <Container className='mb-5'>
                 <Box className='text-center'>
-                    <Typography variant='h2' className='fw-bold header'>Projects</Typography>
+                    <Typography variant='h2' className='fw-bold header'>My Portfolio</Typography>
                     <Typography className='quote'>
                         “You can do anything you set your mind to.”
                     </Typography>
